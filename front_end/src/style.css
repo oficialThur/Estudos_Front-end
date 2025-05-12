@@ -1,0 +1,140 @@
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('fonts/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 5px 20px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header ul a{
+    position: relative;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    padding: 0 10px;
+}
+
+header ul a::after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+header ul a:hover::after{
+    width: 100%;
+}
+
+/* main */
+
+main{
+    padding: 20px;
+    margin: 0 10px 10px;
+}
+
+main #Home,#Skills,#Projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100svh;
+    gap: 20px;
+}
+
+#home-img_perfil{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;   
+}
+
+#Skill_Bar ul{
+    list-style: none;
+}
+
+.title_bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.Bar{
+    width: 400px;
+    height: 4px;
+    background-color: white;
+}
+
+#Front_end-Bar{
+    width: 95%;
+    height: 4px;
+    background-color: #505050;
+}
+
+#Back_end-Bar{
+    width: 15%;
+    height: 4px;
+    background-color: #505050;
+}
+
+#Web-Bar{
+    width: 60%;
+    height: 4px;
+    background-color: #505050;
+}
+
+#Desktop-Bar{
+    width: 15%;
+    height: 4px;
+    background-color: #505050;
+}
+
+#Mobile-Bar{
+    width: 10%;
+    height: 4px;
+    background-color: #505050;
+}
+
+#Devops-Bar{
+    width: 10%;
+    height: 4px;
+    background-color: #505050;
+}
