@@ -33,15 +33,15 @@ header{
     margin: 5px 20px;
 }
 
+#H1-Dev{
+    text-decoration: none;
+}
+
 header ul{
     display: flex;
     align-items: center;
     list-style: none;
     gap: 20px;
-}
-
-header a{
-    text-decoration: none;
 }
 
 header ul a{
@@ -137,4 +137,49 @@ main #Home,#Skills,#Projects{
     width: 10%;
     height: 4px;
     background-color: #505050;
+}
+
+/* Projects */
+
+
+/* Contact */
+
+footer{
+    padding: 20px;
+    margin: 0 10px 10px;
+}
+
+#header_footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #505050;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 400px;
+    list-style: none;
+    gap: 50px;
+}
+
+footer li{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#header_footer i{
+    font-size: 25px;
+    color: white;
+}
+
+#form_container{
+    display: flex;
+    justify-content: center;
+    height: 100svh;
+    align-items: center;
+    gap: 20px;
 }
