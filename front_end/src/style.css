@@ -19,18 +19,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
     color: white;
     font-family: 'JetBrains Mono', monospace;
 }
 
 /* header */
 
+body{
+    background-color: black;
+}
+
 header{
     display: flex;
     justify-content: space-evenly;
     padding: 10px;
     margin: 5px 20px;
+    background-color: black;
 }
 
 #H1-Dev{
@@ -149,7 +153,7 @@ section{
 }
 
 .slides{
-    width: 800px;
+    width: 400%;
     height: 400px;
     display: flex;
 }
@@ -170,7 +174,7 @@ section{
 .manual-navigation{
     position: absolute;
     width: 800px;
-    margin-top: -40px;
+    margin-top: 400px;
     display: flex;
     justify-content: center;
 }
@@ -188,8 +192,7 @@ section{
 }
 
 .manualButton:hover{
-    background-color: white;
-    color: black;
+    background-color: white;   
 }
 
 
@@ -247,6 +250,7 @@ footer li{
 #contactForm input{
     padding: 5px;
     border: none;
+    background-color: black;
     border-bottom: 1px solid#505050;
     color: white;
 }
@@ -259,6 +263,7 @@ footer li{
 #contactForm textarea{
     padding: 5px;
     border: none;
+    background-color: black;
     border-bottom: 1px solid #505050;
     color: white;
 }
