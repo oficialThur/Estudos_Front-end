@@ -24,7 +24,7 @@
   </header>
   <body>
     <main>
-      <div id="Home">
+      <section id="Home">
         <img
           id="home-img_perfil"
           src="/front_end/assets/foto_perfil.jpeg"
@@ -35,8 +35,8 @@
           Me chamo Arthur Henrique <br />
           E sou um Dev full-Stack
         </h2>
-      </div>
-      <div id="Skills">
+      </section>
+      <section id="Skills">
         <div id="Skill_Bar">
           <h3>Skills</h3>
           <p>Minhas especialidades</p>
@@ -97,10 +97,44 @@
             </li>
           </ul>
         </div>
-      </div>
-      <div id="Projects">
-        <h1>Carousel</h1>
-      </div>
+      </section>
+      <section id="Projects">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radioButton" id="radio1" />
+            <input type="radio" name="radioButton" id="radio2" />
+            <input type="radio" name="radioButton" id="radio3" />
+            <input type="radio" name="radioButton" id="radio4" />
+            
+            <div class="slide first">
+              <img src="" alt="" />
+            </div>
+            <div class="slide">
+              <img src="" alt="" />
+            </div>
+            <div class="slide">
+              <img src="" alt="" />
+            </div>
+            <div class="slide">
+              <img src="" alt="" />
+            </div>
+
+            <div class="navigation_auto">
+              <div class="autoButton1"></div>
+              <div class="autoButton2"></div>
+              <div class="autoButton3"></div>
+              <div class="autoButton4"></div>
+            </div>
+
+            <div class="manual-navigation">
+              <label for="radio1" class="manualButton"></label>
+              <label for="radio2" class="manualButton"></label>
+              <label for="radio3" class="manualButton"></label>
+              <label for="radio4" class="manualButton"></label>
+          </div>
+
+        </div>
+      </section>
     </main>
   </body>
   <footer>
@@ -122,7 +156,22 @@
       </ul>
     </div>
     <div id="form_container">
-      <form action=""><h1>formulario</h1></form>
+      <form action="/contato" method="post" id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="nameForm" name="name" required /><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="emailForm" name="email" required /><br /><br />
+
+        <label for="phone">Telefone:</label>
+        <input type="phone" id="emailFomr" name="phone" required /><br /><br />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
     </div>
   </footer>
+  <script src="script.js"></script>
 </html>
