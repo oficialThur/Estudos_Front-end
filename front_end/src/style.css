@@ -145,6 +145,133 @@ section{
 
 /* Projects */
 
+#Projects{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100svh;
+    gap: 20px;
+}
+
+#slideCard{
+    width: 1280px;
+    max-width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+#slideCard::-webkit-scrollbar{
+    display: none;
+}
+
+.card-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    gap: 20px;
+}
+
+.card-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    background-color: #505050;
+    border-radius: 12px;
+    padding: 10px;
+    border: 2px solid transparent;
+}
+
+.card-item:hover{
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.description{
+    display: inline-block;
+    padding: 0px 10px 0px 10px;
+    background-color: rgba(255, 123, 0, 0.4);
+    color: rgb(255, 123, 0);
+    border-radius: 50px;
+}
+
+.card-link h3{
+    padding: 10px;
+    margin: 10px 0px 0px;
+}
+
+.card-link div{
+    padding: 0px 10px 0px;
+}
+
+.card-link i{
+    padding: 0px 10px 10px;
+    font-size: 30px;
+    color: white;
+}
+
+.card-link:hover i{
+    color: black;
+    transition: 0.3s;
+}
+
+.card-link{
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.card-image{
+    width: 100%;
+    height: auto;
+    position: outside;
+    border-radius: 12px;
+    margin: 0px 0px 10px;
+}
+
+.buttonDirection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttonDirection button{
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgb(50, 50, 50, 0.9);
+    color: black;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.buttonDirection button:hover{
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.buttonDirection i{
+    font-size: 20px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.buttonDirection i:hover{
+    color: white;
+    transition: 0.3s;
+}
+.buttonDirection a{
+    text-decoration: none;
+}
 
 /* Contact */
 
