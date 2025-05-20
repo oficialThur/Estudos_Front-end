@@ -21,6 +21,7 @@
     box-sizing: border-box;
     color: white;
     font-family: 'JetBrains Mono', monospace;
+    scroll-behavior: smooth;
 }
 
 /* header */
@@ -390,7 +391,19 @@ footer li{
     }
 
     header ul{
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: black;
+        padding: 20px;
         display: none;
+    }
+
+    header ul.active{
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s;
     }
 
     .mobile-menu{
@@ -402,6 +415,17 @@ footer li{
         justify-content: center;
         align-items: center;
         font-size: 25px;
+    }
+
+    .Bar{
+        width: 300px;
+        height: 4px;
+        background-color: white;
+    }
+
+    .card-item{
+        width: 300px;
+        height: 400px;
     }
 
     #header_footer{
@@ -471,7 +495,7 @@ footer li{
     }
 
     #Home h2{
-        font-size: 15px;
+        font-size: 25px;
     }
 
     .Bar{

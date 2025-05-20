@@ -13,19 +13,19 @@
     />
     <title>Document</title>
   </head>
-  <header>
+  <header id="Header">
     <h1><a id="H1-Dev" href="page.html">DevThur</a></h1>
+    <ul id="menu-list">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Projects">Projects</a></li>
+      <li><a href="#Footer">Contact</a></li>
+    </ul>
     <div class="mobile-menu">
       <div class="line1"></div>
       <div class="line2"></div>
       <div class="line3"></div>
     </div>
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Skills</a></li>
-      <li><a href="">Projects</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
   </header>
   <body>
     <main>
@@ -201,9 +201,9 @@
       </section>
     </main>
   </body>
-  <footer>
+  <footer id="Footer">
     <div id="header_footer">
-      <h1><a id="H1-Dev" href="page.html">DevThur</a></h1>
+      <h1><a id="H1-Dev" href="#Header">DevThur</a></h1>
       <ul>
         <li>
           <a href=""><i class="fa-brands fa-github"></i></a>
@@ -237,5 +237,6 @@
       </form>
     </div>
   </footer>
+  <script src="menu.js"></script>
   <script src="slide.js"></script>
 </html>
